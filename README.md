@@ -22,6 +22,7 @@ deploy:
   user: <user>
   root: <root>
   port: [port] # Default is 22
+  identity_file: [path] # Default is ~/.ssh/id_rsa
   delete: [true|false] # Default is true
   args: <rsync args>
   verbose: [true|false] # Default is true
@@ -32,6 +33,7 @@ deploy:
 - **user**: Username  
 - **root**: Root directory of remote host   
 - **port**: Port
+- **identity_file**: Path of the private key file 
 - **delete**: Delete old files on remote host
 - **args**: Rsync arguments
 - **verbose**: Display verbose messages
